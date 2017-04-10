@@ -2,7 +2,7 @@
 from Crypto.publicKey import RSA
 from Crypto import Random
 
-#Klucz o dlugosci 1024b dla skrocenia czasu
+#Klucz o dlugosci 1024b został użyty dla skrocenia czasu. Dotychczas największym kluczem RSA, jaki rozłożono na czynniki pierwsze, jest klucz 768-bitowy.(dane jakie znalazłem). 
 ran = Random.new().read
 key = RSA.generate(1024, ran)
 public = open('mykeypublic.pem','w')
