@@ -2,7 +2,7 @@
 import hashlib
 import ssdeep
 
-plik = open('C:\\Users\\kbruli22\\Desktop\\krypto\\lab3\\funkcjeskrotu\\pliki\\plik1.pdf',"rb")
+plik = open('C:\\Users\\kbruli22\\Desktop\\krypto\\lab3\\funkcjeskrotu\\pliki\\plik1.txt',"rb")
 try:
     read = plik.read();
 finally:
@@ -24,7 +24,7 @@ print("MD5DEEP:")
 print(x3)	
 
 #generowanie skrotu SSDEEP
-with open('C:\\Users\\kbruli22\\Desktop\\krypto\\lab3\\funkcjeskrotu\\pliki\\plik2.pdf',"rb") as file: 
+with open('C:\\Users\\kbruli22\\Desktop\\krypto\\lab3\\funkcjeskrotu\\pliki\\plik2.txt',"rb") as file: 
 	for wynik in iter(lambda: file.read(),""): 
 		x4=hashlib.ssdeep(wynik)
 		x2=x2+x4.hexdigest() 
